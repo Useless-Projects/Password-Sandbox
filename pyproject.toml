@@ -5,17 +5,13 @@ build-backend = "hatchling.build"
 [project]
 name = "password-sandbox"
 dynamic = ["version"]
-description = 'Password Sandbox is password sandbox to create strong passwords and test the strength of your passwords.'
+description = ''
 readme = "README.md"
 requires-python = ">=3.7"
 license = "MIT"
-keywords = [
-  "password",
-  "sandbox",
-  "useless",
-]
+keywords = []
 authors = [
-  { name = "Thibault Savenkoff", email = "thibault.savenkoff@outlook.fr" },
+  { name = "BuildTools", email = "unconfigured@null.spigotmc.org" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -28,17 +24,15 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-  "zxcvbn",
-]
+dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/useless-projects/password-sandbox#readme"
-Issues = "https://github.com/useless-projects/password-sandbox/issues"
-Source = "https://github.com/useless-projects/password-sandbox"
+Documentation = "https://github.com/unknown/password-sandbox#readme"
+Issues = "https://github.com/unknown/password-sandbox/issues"
+Source = "https://github.com/unknown/password-sandbox"
 
 [tool.hatch.version]
-path = "src/password_sandbox_thibault_savenkoff/__about__.py"
+path = "src/password_sandbox/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -68,7 +62,7 @@ dependencies = [
   "ruff>=0.0.243",
 ]
 [tool.hatch.envs.lint.scripts]
-typing = "mypy --install-types --non-interactive {args:src/password_sandbox_thibault_savenkoff tests}"
+typing = "mypy --install-types --non-interactive {args:src/password_sandbox tests}"
 style = [
   "ruff {args:.}",
   "black --check --diff {args:.}",
@@ -134,7 +128,7 @@ unfixable = [
 ]
 
 [tool.ruff.isort]
-known-first-party = ["password_sandbox_thibault_savenkoff"]
+known-first-party = ["password_sandbox"]
 
 [tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
@@ -144,16 +138,16 @@ ban-relative-imports = "all"
 "tests/**/*" = ["PLR2004", "S101", "TID252"]
 
 [tool.coverage.run]
-source_pkgs = ["password_sandbox_thibault_savenkoff", "tests"]
+source_pkgs = ["password_sandbox", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/password_sandbox_thibault_savenkoff/__about__.py",
+  "src/password_sandbox/__about__.py",
 ]
 
 [tool.coverage.paths]
-password_sandbox_thibault_savenkoff = ["src/password_sandbox_thibault_savenkoff", "*/password-sandbox-thibault-savenkoff/src/password_sandbox_thibault_savenkoff"]
-tests = ["tests", "*/password-sandbox-thibault-savenkoff/tests"]
+password_sandbox = ["src/password_sandbox", "*/password-sandbox/src/password_sandbox"]
+tests = ["tests", "*/password-sandbox/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
@@ -161,12 +155,3 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
-
-[tool.hatch.build.targets.sdist]
-exclude = [
-  "/.github",
-  "/docs",
-]
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/foo"]
