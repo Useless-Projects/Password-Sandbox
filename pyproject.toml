@@ -11,7 +11,7 @@ requires-python = ">=3.7"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "BuildTools", email = "unconfigured@null.spigotmc.org" },
+  { name = "Thibault Savenkoff", email = "thibault.savenkoff@outlook.fr" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -27,9 +27,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/unknown/password-sandbox#readme"
-Issues = "https://github.com/unknown/password-sandbox/issues"
-Source = "https://github.com/unknown/password-sandbox"
+Documentation = "https://github.com/useless-projects/password-sandbox#readme"
+Issues = "https://github.com/useless-projects/password-sandbox/issues"
+Source = "https://github.com/useless-projects/password-sandbox"
 
 [tool.hatch.version]
 path = "src/password_sandbox/__about__.py"
