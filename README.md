@@ -22,6 +22,12 @@ pip install password-sandbox
 import password_sandbox
 ```
 
+or
+
+```console
+python -m password_sandbox
+```
+
 -----
 
 [Icons made by juicy_fish - Flaticon](https://www.flaticon.com/authors/juicy-fish)
