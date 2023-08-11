@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "password-sandbox"
 dynamic = ["version"]
-description = ''
+description = 'Password Sandbox is password sandbox to create strong passwords and test the strength of your passwords.'
 readme = "README.md"
 requires-python = ">=3.7"
 license = "MIT"
@@ -21,15 +21,18 @@ classifiers = [
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "zxcvbn",
+]
 
 [project.urls]
-Documentation = "https://github.com/useless-projects/password-sandbox#readme"
-Issues = "https://github.com/useless-projects/password-sandbox/issues"
-Source = "https://github.com/useless-projects/password-sandbox"
+Documentation = "https://github.com/Useless-Projects/password-sandbox#readme"
+Issues = "https://github.com/Useless-Projects/password-sandbox/issues"
+Source = "https://github.com/Useless-Projects/password-sandbox"
 
 [tool.hatch.version]
 path = "src/password_sandbox/__about__.py"
@@ -52,7 +55,7 @@ cov = [
 ]
 
 [[tool.hatch.envs.all.matrix]]
-python = ["3.7", "3.8", "3.9", "3.10", "3.11"]
+python = ["3.7", "3.8", "3.9", "3.10", "3.11", "3.12"]
 
 [tool.hatch.envs.lint]
 detached = true

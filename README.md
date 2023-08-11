@@ -1,18 +1,14 @@
 # Password Sandbox
 
-**Password Sandbox** is password sandbox to *create* strong passwords and *test* the strength of your **passwords**.
-
-[![PyPI - Version](https://img.shields.io/pypi/v/password-sandbox.svg)](https://pypi.org/project/password-sandbox)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/password-sandbox.svg)](https://pypi.org/project/password-sandbox)
+[![PyPI - Version](https://img.shields.io/pypi/v/password-sandbox?style=flat-square&logo=PyPI&label=Version%3A)](https://pypi.org/project/password-sandbox)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/password-sandbox?style=flat-square&logo=python&logoColor=%23ffd343&label=Version%20of%20Python%3A
+)](https://pypi.org/project/password-sandbox)
+![License](https://img.shields.io/badge/License%3A-MIT-red?style=flat-square)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/password-sandbox?style=flat-square&label=Downloads%3A)
+![GitHub - Last Commit](https://img.shields.io/github/last-commit/Useless-Projects/password-sandbox?style=flat-square&label=Last%20Commit%3A)
+![Size](https://img.shields.io/github/repo-size/Useless-Projects/password-sandbox?style=flat-square&label=Size%3A&color=teal)
 
 -----
-
-## Table of Contents
-
-- [Password Sandbox](#password-sandbox)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [License](#license)
 
 ## Installation
 
@@ -20,6 +16,12 @@
 pip install password-sandbox
 ```
 
-## License
+## Usage
 
-`password-sandbox` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+```python
+import password_sandbox
+```
+
+-----
+
+[Icons made by juicy_fish - Flaticon](https://www.flaticon.com/authors/juicy-fish)
